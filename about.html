@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css" />
+    <title>About - Arkan Ubaidillah Warman</title>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div style="display: flex; align-items: center; margin-right: 20px">
+        <img
+          src="ARKT.png"
+          alt="Logo ARKT"
+          style="width: 40px; height: auto; margin-right: 10px"
+        />
+        <h1 style="margin: 0; font-size: 1.5rem">Arkan Ubaidillah Warman</h1>
+      </div>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <img
+            src="ARKT.png"
+            alt="Logo ARKT"
+            style="width: 100px; height: auto; margin-bottom: 10px"
+          />About - A R K T
+        </h1>
+        <p>Discover more about me and my journey! 🚀</p>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="section">
+        <h2>👤 Personal Information</h2>
+        <p class="lead">Here's some basic info about me:</p>
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>Nama</h3>
+            <p>Arkan Ubaidillah Warman</p>
+          </div>
+          <div class="info-card">
+            <h3>NIM</h3>
+            <p>2411537001</p>
+          </div>
+          <div class="info-card">
+            <h3>Program Studi</h3>
+            <p>Informatika</p>
+          </div>
+          <div class="info-card">
+            <h3>Universitas</h3>
+            <p>Universitas Andalas</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>🎮 Gaming Profile</h2>
+        <p class="lead">My adventures in the gaming world:</p>
+        <div class="gaming-grid">
+          <div class="game-card">
+            <h3>Mobile Legends</h3>
+            <p>ID: 925343613</p>
+            <p>Nama: A R K T</p>
+          </div>
+          <div class="game-card">
+            <h3>Valorant</h3>
+            <p>ID: A R K T#PDIP</p>
+          </div>
+          <div class="game-card">
+            <h3>Magic Chess</h3>
+            <p>ID: A R K T</p>
+          </div>
+          <div class="game-card">
+            <h3>Apex Legends</h3>
+            <p>Nama: A R K T</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>💡 My Goals</h2>
+        <p>
+          Tujuan saya adalah menjadi seorang profesional di bidang informatika
+          yang inovatif dan berkontribusi positif terhadap masyarakat melalui
+          pengembangan teknologi yang bermanfaat. Saya berusaha untuk terus
+          belajar dan berkembang, baik dalam dunia akademik maupun gaming,
+          sebagai sarana untuk meningkatkan keterampilan problem-solving, kerja
+          tim, dan kreativitas. Melalui pengalaman di Universitas Andalas, saya
+          ingin mencapai kesuksesan dalam karir saya dan memberikan dampak yang
+          signifikan di industri teknologi.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>📄 About This Page</h2>
+        <p>
+          Halaman ini berisi informasi identitas saya mulai dari nama, NIM,
+          hingga gaming. Dibuat dengan kreativitas untuk memberikan pengalaman
+          yang menarik! ✨
+        </p>
+      </section>
+    </main>
+
+    <footer>&copy; Universitas Andalas — Informatika</footer>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./service-worker.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registered with scope:",
+                registration.scope
+              );
+            })
+            .catch((error) => {
+              console.log("Service Worker registration failed:", error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
